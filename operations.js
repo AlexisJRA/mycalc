@@ -51,7 +51,7 @@ function init(){
         resultado.textContent=resultado.textContent+"0"
     }
     del.onclick=function(e){
-        del();
+        limpiar();
     }
     sum.onclick=function(e){
         operandoa=resultado.textContent;
@@ -84,7 +84,7 @@ function limpiar(){
     resultado.textContent="";
 }
 
-function del(){
+function borrar(){
     resultado.textContent="";
     operandoa=0;
     operandob=0;
@@ -110,6 +110,6 @@ function resolver(){
         res = parseFloat(operandoa) / parseFloat(operandob);
         break;
     }
-    del();
+    borrar();
     resultado.textContent = res;
   }
